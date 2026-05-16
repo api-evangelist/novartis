@@ -1,17 +1,35 @@
 aid: novartis
-url: https://raw.githubusercontent.com/api-evangelist/novartis/refs/heads/main/apis.yml
 name: Novartis
+description: >-
+  Novartis AG is a Swiss multinational pharmaceutical corporation
+  headquartered in Basel, Switzerland, and one of the largest pharmaceutical
+  companies in the world by revenue. The company focuses on innovative
+  medicines across oncology, immunology, neuroscience, cardiovascular,
+  renal, and metabolic disease areas. Novartis does not publish a public
+  external developer API. The company does maintain an Open Source Science
+  programme that releases scientific computing libraries, Drupal modules,
+  and informatics tooling on GitHub for use by the research community.
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
   - Pharmaceutical
   - Healthcare
   - Biotechnology
-description: 'A Swiss multinational pharmaceutical corporation and one of the largest pharmaceutical companies in the world by revenue. Focused on innovative medicines across oncology, immunology, neuroscience, and cardiovascular diseases.'
+  - Life Sciences
+  - Open Source Science
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/novartis/refs/heads/main/apis.yml
 created: '2026-05-05'
-modified: '2026-05-05'
+modified: '2026-05-16'
 specificationVersion: '0.19'
 apis: []
 common:
   - type: Website
     url: https://www.novartis.com/
+  - type: OpenSource
+    url: https://www.novartis.com/open-source
+  - type: GitHubOrganization
+    url: https://github.com/Novartis
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

@@ -23,6 +23,12 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/novartis.png
 tags:
+  - Pharmaceuticals
+  - Healthcare
+  - Biotechnology
+  - Life Sciences
+  - Open Source Science
+tags_raw:
   - Pharmaceutical
   - Healthcare
   - Biotechnology

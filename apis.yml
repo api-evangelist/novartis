@@ -48,10 +48,12 @@ tags_raw:
 url: >-
   https://raw.githubusercontent.com/api-evangelist/novartis/refs/heads/main/apis.yml
 created: '2026-05-05'
-modified: '2026-05-16'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 apis: []
 common:
+  - url: https://www.novartis.com/news
+    type: Blog
   - type: DomainSecurity
     url: security/novartis-domain-security.yml
   - type: LinkedIn

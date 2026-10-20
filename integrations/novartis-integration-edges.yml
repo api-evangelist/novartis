@@ -1,0 +1,102 @@
+edges:
+- partner_name: FDA CBER (approved cellular and gene therapy products)
+  partner: null
+  partner_match: register
+  type: contract
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/kymriah
+  category: Approved cell / gene therapy product
+  contract_reference:
+    register: FDA Approved Cellular and Gene Therapy Products (fda.gov, CBER)
+    standard: FDA biologics license (cellular and gene therapy products)
+    role: approved-cgt-manufacturer
+    spec_file: null
+    registered_name: Novartis Pharmaceuticals Corporation
+    matched_domain: novartis.com
+    matched_by: domain
+    certified_products:
+    - product: engineered T-cell therapy (CAR-T / TCR / TIL) (FDA approval)
+      product_type: engineered T-cell therapy (CAR-T / TCR / TIL)
+      lapsed: false
+      products_sample:
+      - KYMRIAH (tisagenlecleucel)
+    signal_note: certified_products = one entry per approved PRODUCT TYPE, never per product; lapsed when every
+      product of the type is withdrawn / not authorised. Products are context, never counted
+    detected_by: sweep-cell-gene-therapy.py
+    detected: '2026-10-20'
+    identity: wikidata Q507154 'Novartis' P856 http://www.novartis.com/
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-cell-gene-therapy.py
+  first_seen: '2026-10-20'
+- partner_name: ClinicalTrials.gov (cell / gene therapy trial sponsors)
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://clinicaltrials.gov/study/NCT07448610
+  category: Interventional cell / gene therapy trial sponsor
+  contract_reference:
+    register: ClinicalTrials.gov API v2 (interventional, industry lead sponsor, cell/gene therapy interventions)
+    standard: null
+    spec_file: null
+    role: cgt-trial-lead-sponsor
+    registered_name: Novartis Pharmaceuticals
+    matched_domain: novartis.com
+    matched_by: domain
+    active_trial: true
+    latest_start: '2026-08-27'
+    trials_sample:
+    - NCT07448610
+    - NCT07048197
+    - NCT06910813
+    - NCT06704269
+    - NCT06868290
+    signal_note: 'PARTICIPATION only (a trial is not an approval): active_trial and latest_start are per-edge signals;
+      the number of trials is never counted'
+    detected_by: sweep-cell-gene-therapy.py
+    detected: '2026-10-20'
+    identity: wikidata Q507154 'Novartis' P856 http://www.novartis.com/
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-cell-gene-therapy.py
+  first_seen: '2026-10-20'
+- partner_name: Alliance for Regenerative Medicine (members)
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://members.alliancerm.org/Online/Directory/Member-Directory-Profile.aspx?ID=23272
+  category: CGT trade body member
+  contract_reference:
+    register: Alliance for Regenerative Medicine member directory (members.alliancerm.org)
+    standard: null
+    spec_file: null
+    role: arm-member
+    registered_name: Novartis
+    register_id: '23272'
+    organization_focus: Therapeutic Developer
+    listed_website: http://www.novartis.com
+    matched_domain: novartis.com
+    matched_by: domain
+    signal_note: 'self-filed paid membership: listing alone = standard-participant; hand-reviewed'
+    detected_by: sweep-cell-gene-therapy.py
+    detected: '2026-10-20'
+  detected_by: sweep-cell-gene-therapy.py
+  first_seen: '2026-10-20'
+generated: '2026-10-20'
+method: searched
+source:
+- https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/approved-cellular-and-gene-therapy-products
+- https://www.ema.europa.eu/en/documents/report/medicines-output-medicines-report_en.xlsx
+- https://clinicaltrials.gov/api/v2/studies
+- https://members.alliancerm.org/Online/Directory/Member-Directory.aspx?WebsiteKey=0a8f86de-1bef-4044-be59-e2f7f1c52e39
+checked:
+- https://clinicaltrials.gov/api/v2/studies
+- https://members.alliancerm.org/Online/Directory/Member-Directory.aspx?WebsiteKey=0a8f86de-1bef-4044-be59-e2f7f1c52e39
+- https://www.ema.europa.eu/en/documents/report/medicines-output-medicines-report_en.xlsx
+- https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/approved-cellular-and-gene-therapy-products

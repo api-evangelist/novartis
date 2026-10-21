@@ -92,3 +92,123 @@
     detected: '2026-10-20'
   status: not-a-workflow
   arazzo: null
+- slug: novartis-fda-drugs-fda-approved-drug-and-biologic-applications
+  label: FDA Drugs@FDA (approved drug and biologic applications)
+  partner_name: FDA Drugs@FDA (approved drug and biologic applications)
+  category: FDA drug / biologic application holder
+  type: contract
+  channel: regulator-register
+  evidence: https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=103764
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: Drugs@FDA (openFDA drug/drugsfda; application holder = sponsor_name)
+    standard: FDA drug / biologic marketing application (21 CFR 314 / 601)
+    spec_file: null
+    role: fda-application-holder
+    registered_name: NOVARTIS
+    matched_domain: novartis.com
+    matched_by: domain
+    certified_products:
+    - product: Abbreviated New Drug Application (generic, approved) (Drugs@FDA)
+      product_type: ANDA
+      lapsed: true
+      products_sample:
+      - APRESAZIDE
+      - ASBRON
+      - CARBASTAT
+      - DEXACIDIN
+      - FLUOR-OP
+      - FOAMICON
+    - product: Biologics License Application (approved) (Drugs@FDA)
+      product_type: BLA
+      lapsed: false
+      products_sample:
+      - ARZERRA
+      - KESIMPTA
+      - SIMULECT
+    - product: New Drug Application (approved) (Drugs@FDA)
+      product_type: NDA
+      lapsed: false
+      products_sample:
+      - ACYLANID
+      - AFINITOR
+      - ALOMIDE
+      - AMTURNIDE
+      - ANTRENYL
+      - ANTURANE
+    applications_sample:
+    - BLA103764
+    - BLA125326
+    - NDA016608
+    - NDA018927
+    - NDA019667
+    signal_note: certified_products = one entry per application TYPE (NDA / ANDA / BLA), never per application;
+      lapsed when every product under the type is Discontinued. Applications are context, never counted
+    detected_by: sweep-clinical-trial-sponsors.py
+    detected: '2026-10-21'
+    identity: wikidata Q507154 'Novartis' P856 http://www.novartis.com/
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
+  status: not-a-workflow
+  arazzo: null
+- slug: novartis-clinicaltrials-gov-industry-trial-sponsors-and-collaborators
+  label: ClinicalTrials.gov (industry trial sponsors and collaborators)
+  partner_name: ClinicalTrials.gov (industry trial sponsors and collaborators)
+  category: Interventional trial sponsor / collaborator
+  type: register
+  channel: standard-directory
+  evidence: https://clinicaltrials.gov/study/NCT07739888
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: ClinicalTrials.gov API v2 (interventional, started >= 2021-01-01, industry lead sponsor or collaborator)
+    standard: null
+    spec_file: null
+    role: trial-collaborator+lead-sponsor
+    registered_name: Novartis
+    matched_domain: novartis.com
+    matched_by: domain
+    lead_sponsor: true
+    active_trial: true
+    latest_start: '2027-12-30'
+    trials_sample:
+    - NCT07739888
+    - NCT07713602
+    - NCT07222956
+    - NCT07660172
+    - NCT07679269
+    signal_note: 'PARTICIPATION only (a trial is not an approval): lead_sponsor, active_trial and latest_start are
+      per-edge signals; the number of trials is never counted'
+    detected_by: sweep-clinical-trial-sponsors.py
+    detected: '2026-10-21'
+    identity: wikidata Q507154 'Novartis' P856 http://www.novartis.com/
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
+  status: not-a-workflow
+  arazzo: null
+- slug: novartis-cdisc-members
+  label: CDISC (members)
+  partner: cdisc
+  partner_name: CDISC (members)
+  category: Clinical data standards member
+  type: register
+  channel: standard-directory
+  evidence: https://www.cdisc.org/company/novartis-pharmaceuticals-corporation
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: CDISC member search (cdisc.org/members/search + public company page website)
+    standard: CDISC clinical data standards (SDTM / ADaM / CDASH / ODM)
+    spec_file: null
+    role: cdisc-member
+    registered_name: Novartis Pharmaceuticals Corporation
+    register_id: novartis-pharmaceuticals-corporation
+    member_industry: Pharmaceutical
+    listed_website: http://www.novartis.com/
+    matched_domain: novartis.com
+    matched_by: domain
+    signal_note: 'self-filed paid membership: listing alone = standard-participant (standards adopter); partner_tier
+      is the membership level, never weighted as a tier; hand-reviewed'
+    detected_by: sweep-clinical-trial-sponsors.py
+    detected: '2026-10-21'
+  status: not-a-workflow
+  arazzo: null

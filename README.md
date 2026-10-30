@@ -1,4 +1,4 @@
-# Novartis (novartis)
+# Novartis
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,21 +66,79 @@
 
 Novartis AG is a Swiss multinational pharmaceutical corporation headquartered in Basel, Switzerland, and one of the largest pharmaceutical companies in the world by revenue. The company focuses on innovative medicines across oncology, immunology, neuroscience, cardiovascular, renal, and metabolic disease areas. Novartis does not publish a public external developer API. The company does maintain an Open Source Science programme that releases scientific computing libraries, Drupal modules, and informatics tooling on GitHub for use by the research community.
 
-**URL:** [https://www.novartis.com/](https://www.novartis.com/)
+**Areas:** Pharmaceuticals · Healthcare · Biotechnology · Life Sciences · Open Source Science
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=novartis-api-evangelist&utm_content=repo)
+## Novartis on APIs.io
 
-## Tags:
+Everything profiled for Novartis is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/novartis/](https://apis.io/providers/novartis/)** — or go straight to one of the APIs or properties below.
 
- - Pharmaceutical, Healthcare, Biotechnology, Life Sciences, Open Source Science
+### Published properties
 
-## Common Properties
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- **Website:** https://www.novartis.com/
-- **OpenSource:** https://www.novartis.com/open-source
-- **GitHubOrganization:** https://github.com/Novartis
+#### Security (1)
 
-## Timestamps
+Authentication, trust centre, and vulnerability disclosure.
 
-- **Created:** 2026-05-05
-- **Modified:** 2026-05-16
+- [Novartis Domain Security](https://apis.io/security/novartis/novartis-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.novartis.com/)
+- [Blog](https://www.novartis.com/news)
+- [GitHub](https://github.com/Novartis)
+
+## API Evangelist rating
+
+**Kin Score 4.5** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 4.7** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/novartis/](https://apis.io/providers/novartis/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Novartis: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/novartis/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
